@@ -51,14 +51,14 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 \photo[circle,noedge,left]{./examples/profile}
-\name{Marlon}{Horner}
-\position{Tech Architect • Automation and AI Specialist • Business-Driven Problem Solver}
-\address{Zedernweg 6, 8200 Schaffhausen, Schweiz}
-\mobile{+41 76 319 42 67}
-\email{hello@marlonhorner.com}
-\homepage{www.marlonhorner.com}
-\github{marlonhorner}
-\linkedin{marlonhorner}
+\name{{{name}}}{{{surname}}}
+\position{{{position}}}
+\address{{{address}}}
+\mobile{{{mobile}}}
+\email{{{email}}}
+\homepage{{{homepage}}}
+\github{{{github}}}
+\linkedin{{{linkedin}}}
 
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
@@ -82,13 +82,13 @@
 % The company being applied to
 \recipient
   {Personalabteilung des Unternehmens}
-  {ANYbotics\\Hagenholzstrasse 83a\\ Zurich\\CH}
+  {{{recipient_address}}}
 % The date on the letter, default is the date of compilation
-\letterdate{16. Juli, 2025}
+\letterdate{{{letter_date}}}
 % The title of the letter
-\lettertitle{Bewerbung als Senior Mechanical Engineer / Robotics}
+\lettertitle{{{letter_title}}}
 % How the letter is opened
-\letteropening{Sehr geehrte Damen und Herren,}
+\letteropening{{{salutation}},}
 % How the letter is closed
 \letterclosing{Mit freundlichen Grüssen,}
 % Any enclosures with the letter
@@ -105,8 +105,8 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {16. Juli, 2025}
-  {Marlon Horner~~~·~~~Motivationsschreiben}
+  {{{letter_date}}}
+  {{{name}} {{surname}}~~~·~~~Motivationsschreiben}
   {}
 
 % Print the title with above letter information
@@ -118,13 +118,13 @@
 \begin{cvletter}
 
 \lettersection{Über mich}
-Ich bin ein technischer Problemloeser, der komplexe Systeme nicht nur versteht, sondern sie von Grund auf neu denkt und optimiert. Mit ueber sechs Jahren Erfahrung in der Entwicklung und Automatisierung kritischer Infrastrukturen bringe ich einen interdisziplinaeren Ansatz mit, der Mechanik, Software und Systemdesign nahtlos verbindet. Meine Staerke liegt darin, aus abstrakten Anforderungen konkrete, skalierbare Loesungen zu entwickeln – ob bei der Implementierung von VMware-Infrastrukturen fuer 14.000+ Mitarbeiter oder beim Aufbau automatisierter E-Commerce-Systeme mit siebenstelligen Umsaetzen.
+{{about_me}}
 
-\lettersection{Warum ANYbotics?}
-ANYbotics baut keine Maschinen, sondern autonome Systeme, die in extremen Umgebungen das Unmögliche moeglich machen. Die Kombination aus KI-gesteuerter Inspektion, LIDAR-basierter Navigation und der mechanischen Komplexitaet von ANYmal zeigt echten Engineering-Mut. Besonders fasziniert mich der Full-Stack-Ansatz: Von custom Aktuatoren bis zu Ladestationen entwickelt ihr alles inhouse – genau die Art von technischer Tiefe und Ownership, die ich suche.
+\lettersection{{{why_section_title}}}
+{{why_company}}
 
 \lettersection{Warum ich?}
-Meine Erfahrung mit mechatronischen Systemen und Automatisierung macht mich zum idealen Kandidaten fuer diese Position. Bei GF Piping Systems habe ich kritische Java-Applikationen entwickelt und VMware-Cluster aufgebaut, die hoechste Verfuegbarkeit garantieren mussten. Als Tech Lead bei Sneakzmarket habe ich gelernt, wie man Systeme nicht nur technisch robust, sondern auch kosteneffizient und skalierbar gestaltet. Mein Python-Background und meine Erfahrung mit Docker/Linux-Umgebungen ermoeglichen mir, nahtlos zwischen mechanischen Herausforderungen und Software-Integration zu navigieren. Die Kombination aus meinem Systemdenken, meiner Hands-on-Mentalitaet und meiner Faehigkeit, komplexe Trade-offs zwischen Performance, Zuverlaessigkeit und Kosten zu managen, macht mich zum perfekten Senior Engineer fuer eure naechste Robotergeneration.
+{{why_me}}
 
 \end{cvletter}
 

@@ -1,125 +1,108 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Work Experience}
+\cvsection{Berufserfahrung}
 
 
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cventries}
+\cventry
+  {Performance \& Digital Automation Specialist}
+  {Hermex Trade GmbH}
+  {Schaffhausen, Schweiz}
+  {Feb. 2024 - Heute}
+  {
+    \begin{cvitems}
+\item {Engineered cross-platform automation workflows, integrating ERP, CRM, and e-commerce systems to streamline business processes and enhance scalability with low-code infrastructure.}
+\item {Automated real-time price adjustments in online retail, eliminating manual intervention and optimizing promotional execution for increased revenue generation.}
+\item {Developed AI-driven address verification and automatic dispatch approval systems, significantly reducing order errors and enhancing overall logistics efficiency.}
+\item {Spearheaded the implementation of advanced tracking systems on web platforms, which boosted business intelligence and enriched user insights for strategic decision-making.}
+\end{cvitems}
+  }
 
-%---------------------------------------------------------
-  \cventry
-    {DevOps Engineer} % Job title
-    {Dunamu Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Sep. 2023 - Present} % Date(s)
-    {
-    }
+\cventry
+  {Digital Project Manager}
+  {SiL Management \& Treuhand AG}
+  {Freelance (Remote)}
+  {Sept. 2023 - Heute}
+  {
+    \begin{cvitems}
+\item {Implemented automated workflows that reduced manual invoice processing time by 70\%, enhancing operational efficiency.}
+\item {Developed tailored web solutions with API integrations, eliminating manual data entry and significantly improving data accuracy.}
+\item {Conducted comprehensive analysis of financial processes, identifying automation opportunities that streamlined administrative tasks.}
+\item {Led digital transformation projects, managing stakeholder relationships and ensuring effective process documentation and technical execution.}
+\end{cvitems}
+  }
 
-%---------------------------------------------------------
-  \cventry
-    {Founding Member \& Site Reliability Engineer \& Infrastructure Team Lead} % Job title
-    {Danggeun Pay Inc. (KarrotPay)} % Organization
-    {Seoul, S.Korea} % Location
-    {Mar. 2021 - Jun. 2023} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Everything that matters.}
-        \item {Designed and provisioned the entire infrastructure on the AWS cloud to meet security compliance and acquire a business license for financial services in Korea.}
-        \item {Continuously improved the infrastructure architecture since launching the service. (currently 3.6 million users)}
-        \item {Established a standardized base for declarative management of infrastructures and service deployments, enabling operational efficiency and consistency. Over 90\% of AWS resources were all managed through standardized terraform modules. All add-ons and service workloads on the Kubernetes cluster were managed on a GitOps basis with Kustomize and ArgoCD.}
-        \item {Saved over 30\% of the overall AWS costs by establishing a quarterly purchasing strategiy for RI (Reserved Instance) and SP (Savings Plan) and by introducing Graviton instances.}
-        \item {Established a core architecture for regulating of outbound DNS traffic in multi-account and multi-VPC environments utilizing AWS Route53 DNS Firewall and FMS. This significantly increased the level of security confidence in the financial sector's segregated environment.}
-        \item {Introduced Okta employee identity solution in the company, establishing security policies and configuring SSO integration with over 20 enterprise systems including AWS, GitHub, Slack, Google Workspace. Set up a Hub and Spoke architecture, enabling a collaborative account structure with the parent company, Daangn Market.}
-      \end{cvitems}
-    }
+\cventry
+  {System Administrator / Developer}
+  {GF Piping Systems Schweiz}
+  {Schaffhausen, Schweiz}
+  {Aug. 2021 - Sept. 2023}
+  {
+    \begin{cvitems}
+\item {Implemented a secure self-hosted password management platform with AES-256 encryption, centralizing and safeguarding sensitive data across the organization.}
+\item {Designed a RSYNC-based update distribution system to efficiently deploy Java applications across 30+ logistics center clients, reducing startup delays and enhancing operational efficiency.}
+\item {Developed and maintained mission-critical Java applications, streamlining cross-department business processes in a global organization with over 14,000 employees.}
+\item {Led the development of a Linux server application for real-time data transfer to mobile devices, optimizing pallet and package handling processes in logistics.}
+\end{cvitems}
+  }
 
-%---------------------------------------------------------
-  \cventry
-    {Site Reliability Engineer} % Job title
-    {Danggeun Market Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Feb. 2021 - Mar. 2021} % Date(s)
-    {
-    }
+\cventry
+  {Co-Founder \& Tech Lead – E-Commerce (Schuhhandel)}
+  {Sneakzmarket GmbH}
+  {Schaffhausen, Schweiz}
+  {Apr. 2021 - Dez. 2023}
+  {
+    \begin{cvitems}
+\item {Spearheaded the automation of all business processes, enhancing operational efficiency from product import to invoicing, resulting in substantial profit growth.}
+\item {Engineered and maintained a scalable infrastructure, successfully migrating from WooCommerce to Shopify with seamless real-time inventory synchronization, ensuring uninterrupted operations.}
+\item {Optimized customer experience and conversion rates through innovative web solutions, including automated image processing and enhanced page speed, leading to significant revenue increases.}
+\item {Implemented data-driven analytics strategies to continuously refine performance, achieving and sustaining seven-figure revenue streams through targeted marketing efforts.}
+\end{cvitems}
+  }
 
-%---------------------------------------------------------
-  \cventry
-    {Founding Member \& Director of Infrastructure Division} % Job title
-    {Kasa} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2018 - Jan. 2021} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed on-boarding process to guide new engineers, help them to focus on the right tasks, and set expectations to help them be successful at Infrastructure team.}
-        \item {Migrated the orchestration system from DC/OS to Kubernetes which is based on AWS EKS. Managed 3 Kubernetes clusters and 300+ pods. Managed all Kubernetes manifests declaratively with Kustomize and ArgoCD.}
-        \item {Designed and managed complex network configurations on AWS with 4 VPC and 100+ subnets. Separated the development network and operation network according to financial regulations. Established dedicated network connections from AWS VPC to partners' on-premise network based on AWS Direct Connect with secure connection using IPsec VPN. Provisioned OpenVPN servers with LDAP integration.}
-        \item {Provisioned a observability system with Kafka, Elastic Stack(Filebeat, Heartbeat, APM Server, Logstash, Elasticsearch, Kibana). Collected log, uptime, tracing data from hosts, containers, pods and more. The ES cluster which has 9 nodes processed more than 1 billion documents per month. Wrote Terraform module to easily provision ES cluster on AWS EC2 instances.}
-        \item {Provisioned a monitoring system with Kafka, Telegraf, InfluxDB, Grafana. Collected metrics from hosts, containers, pods and more. Wrote Terraform module to easily provision InfluxDB with HA on AWS EC2 instances.}
-        \item {Introduced Kong API Gateway to easily connect all API microservices with a declarative management method based on Terraform and Atlantis to collaborate and audit change history.}
-        \item {Provisioned the Directory Service for employee identity management based on OpenLDAP which guarantees HA with multi-master replication.}
-        \item {Implemented Worker microservices consuming Kafka event topics for email, SMS, Kakaotalk and Slack notification. Developed in-house framework to easily build Kafka consumer microservice with common features including retry on failure, DLQ(Dead Letter Queue), event routing and more.}
-        \item {Introduced Elastic APM to help distributed tracing, trouble-shooting and performance testing in MSA.}
-      \end{cvitems}
-    }
+\cventry
+  {Application Engineer}
+  {GF Piping Systems Schweiz}
+  {Schaffhausen, Schweiz}
+  {Aug. 2019 - Juli 2021}
+  {
+    \begin{cvitems}
+\item {Spearheaded the deployment and maintenance of Windows and Linux servers in a hybrid infrastructure, enhancing support for critical business processes and internal development environments.}
+\item {Optimized the logistics operations by managing print servers, configuring label printers, and rolling out drivers, ensuring cross-departmental reliability of printing processes.}
+\item {Administered Active Directory across multiple locations and departments, leading to streamlined user management and enhanced permissions control with efficient implementation of group policies.}
+\item {Implemented robust virtualization environments using VMware, including snapshot management and failover strategies, to ensure high availability and resource allocation for enterprise-critical services.}
+\end{cvitems}
+  }
 
-%---------------------------------------------------------
-  \cventry
-    {Software Architect} % Job title
-    {Omnious. Co., Ltd.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2017 - May. 2018} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
-        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
-        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
-        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
-        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
-        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
-      \end{cvitems}
-    }
+\cventry
+  {Platform Developer}
+  {Curtiss-Wright Corp.}
+  {Schaffhausen, Schweiz}
+  {Aug. 2018 - Juli 2019}
+  {
+    \begin{cvitems}
+\item {Spearheaded VLAN segmentation and routing strategies, enhancing data security and performance across corporate networks.}
+\item {Led administration of Linux and Windows server environments, implementing regular updates and backups to ensure optimal system availability.}
+\item {Developed robust security measures including firewall configurations and access control policies, aligning with corporate compliance standards.}
+\item {Designed comprehensive system maintenance plans, incorporating patch management, monitoring, and incident response to boost operational efficiency.}
+\end{cvitems}
+  }
 
-%---------------------------------------------------------
-  \cventry
-    {Co-founder \& Software Engineer} % Job title
-    {PLAT Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jan. 2016 - Jun. 2017} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
-    {R.O.K Cyber Command, MND} % Organization
-    {Seoul, S.Korea} % Location
-    {Aug. 2014 - Apr. 2016} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer} % Job title
-    {ShitOne Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Dec. 2011 - Feb. 2012} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a proxy drive smartphone application which connects proxy driver and customer.}
-        \item {Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
+\cventry
+  {IT Systems Specialist}
+  {Wibilea AG}
+  {Schaffhausen, Schweiz}
+  {Aug. 2017 - Juli 2018}
+  {
+    \begin{cvitems}
+\item {Engineered robust internal IT infrastructure by configuring VLANs and establishing basic firewall rules, enhancing network security and stability.}
+\item {Automated routine administrative tasks using Bash and PowerShell scripts, streamlining processes such as log rotation and user management, which boosted operational efficiency.}
+\item {Collaborated in cross-functional IT projects, contributing to setup, documentation, and testing, which facilitated smooth project execution and timely delivery.}
+\item {Diagnosed and resolved complex issues in Windows and Linux environments, maintaining system integrity and minimizing downtime through proactive monitoring and documentation.}
+\end{cvitems}
+  }
 \end{cventries}
