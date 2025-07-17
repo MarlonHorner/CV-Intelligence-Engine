@@ -21,3 +21,6 @@
 ## Mac OS X metadata files:
 *.DS_Store
 
+### Local CV Intelligence Engine ###
+## Temporary files that should stay local:
+templates/resume.n8n/temp/
