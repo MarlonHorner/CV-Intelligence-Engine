@@ -1,13 +1,13 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template for CV/Resume
+% Awesome CV LaTeX Template for Cover Letter
 %
 % This template has been downloaded from:
 % https://github.com/posquit0/Awesome-CV
 %
-% Author:
+% Authors:
 % Claud D. Park <posquit0.bj@gmail.com>
-% http://www.posquit0.com
+% Lars Richter <mail@ayeks.de>
 %
 % Template license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
@@ -28,7 +28,7 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{3E6D9C}
+% \definecolor{awesome}{HTML}{CA63A8}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -50,32 +50,49 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
-\name{<<firstname>>}{<<lastname>>}
-\position{<<position>>}
-\address{<<address>>}
+\photo[circle,noedge,left]{./templates/profile}
+\name{{{name}}}{{{surname}}}
+\position{{{position}}}
+\address{{{address}}}
+\mobile{{{mobile}}}
+\email{{{email}}}
+\homepage{{{homepage}}}
+\github{{{github}}}
+\linkedin{{{linkedin}}}
 
-\mobile{<<mobile>>}
-\email{<<email>>}
-%\dateofbirth{<<dateofbirth>>} % Assuming this might be needed later
-\homepage{<<homepage>>}
-\github{<<github>>}
-\linkedin{<<linkedin>>}
-% \gitlab{<<gitlab_id>>}
-% \stackoverflow{<<stackoverflow_id>>}{<<stackoverflow_name>>}
-% \twitter{<<twitter_handle>>}
-% \skype{<<skype_id>>}
-% \reddit{<<reddit_id>>}
-% \medium{<<medium_id>>}
-% \kaggle{<<kaggle_id>>}
-% \hackerrank{<<hackerrank_id>>}
-% \telegram{<<telegram_username>>}
-% \googlescholar{<<googlescholar_id>>}{<<googlescholar_name>>}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \telegram{telegram-username}
+% \googlescholar{googlescholar-id}{name-to-display}
 %% \firstname and \lastname will be used
-% \googlescholar{<<googlescholar_id>>}{}
-% \extrainfo{<<extrainfo>>}
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
 
-\quote{<<quote>>}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Personalabteilung des Unternehmens}
+  {{{recipient_address}}}
+% The date on the letter, default is the date of compilation
+\letterdate{{{letter_date}}}
+% The title of the letter
+\lettertitle{{{letter_title}}}
+% How the letter is opened
+\letteropening{{{salutation}},}
+% How the letter is closed
+\letterclosing{Mit freundlichen Grüssen,}
+% Any enclosures with the letter
+\letterenclosure[Anhang]{Lebenslauf}
 
 
 %-------------------------------------------------------------------------------
@@ -83,31 +100,37 @@
 
 % Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[C]
+\makecvheader[R]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
-  {<<footer_name>>~~~·~~~Lebenslauf}
-  {\thepage}
+  {{{letter_date}}}
+  {{{name}} {{surname}}~~~·~~~Motivationsschreiben}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Über mich}
+{{about_me}}
+
+\lettersection{{{why_section_title}}}
+{{why_company}}
+
+\lettersection{Warum ich?}
+{{why_me}}
+
+\end{cvletter}
 
 
 %-------------------------------------------------------------------------------
-%	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
-%-------------------------------------------------------------------------------
-\input{resume/summary.tex}
-\input{resume/skills.tex}
-\input{resume/experience.tex}
-\input{resume/honors.tex}
-\input{resume/certificates.tex}
-% \input{resume/presentation.tex}
-% \input{resume/writing.tex}
-% \input{resume/committees.tex}
-\input{resume/education.tex}
-% \input{resume/extracurricular.tex}
+% Print the signature and enclosures with above letter information
+\makeletterclosing
 
-
-%-------------------------------------------------------------------------------
 \end{document}
