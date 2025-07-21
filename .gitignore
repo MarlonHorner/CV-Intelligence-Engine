@@ -12,6 +12,9 @@
 *.dvi
 *-converted-to.*
 
+## Generated PDF files:
+*.pdf
+
 ### Editor ###
 ## Vim & Emacs temp files:
 .*sw[op]
@@ -25,3 +28,13 @@
 ## Temporary files that should stay local:
 templates/resume.n8n/temp/
 profile
+
+## Exclude everything except what should be in Git:
+# Exclude files in root templates/ except resume.n8n/ and awesome-cv.cls
+templates/coverletter.tex
+templates/resume.tex
+templates/resume/
+templates/profile.png
+
+# Exclude examples/ folder completely
+examples/
